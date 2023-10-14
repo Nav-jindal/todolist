@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 1.44rem;
+}
+
+h4 {
+  font-size: 0.833rem;
+  text-transform: uppercase;
+}
+
+.leftmenu.active {
+  transform: translateX(-195px);
+}
+
+.icon {
+  height: auto;
+  width: 27px;
+}
+
+.icon-small {
+  height: auto;
+  width: 20px;
+}
+
+.app {
+  display: flex;
+  background-color: #FAFAFA;
+  color: #232526;
+  height: 100vh;
+}
+.app .leftmenu {
+  flex: 1 1 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.7s ease-in-out;
+}
+.app .leftmenu .leftmenu-topbar {
+  margin-bottom: 30px;
+}
+.app .leftmenu .leftmenu-topbar .leftmenu--heading {
+  display: flex;
+  justify-content: space-between;
+}
+.app .leftmenu .leftmenu-topbar .leftmenu--heading img {
+  color: #7D7D7D;
+}
+.app .leftmenu .leftmenu-topbar .leftmenu--heading button {
+  border: none;
+  cursor: pointer;
+}
+.app .leftmenu .tasks h4 {
+  margin-bottom: 10px;
+}
+.app .leftmenu .tasks .tasks--card {
+  display: flex;
+  align-items: center;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  color: #7D7D7D;
+  cursor: pointer;
+}
+.app .leftmenu .tasks .tasks--card img {
+  margin-right: 12px;
+}
+.app .leftmenu .tasks .tasks--card:hover img {
+  filter: hue-rotate(0);
+}
+.app .leftmenu .tasks .tasks--card:hover p {
+  color: #232526;
+  font-weight: 600;
+}
+.app .leftmenu section {
+  margin-bottom: 20px;
+}
+.app .today, .app .upcoming, .app .calendar, .app .sticky-notes {
+  flex: 1 1 60%;
+}
+.app .rightmenu {
+  flex: 1 1 20%;
+}/*# sourceMappingURL=App.css.map */

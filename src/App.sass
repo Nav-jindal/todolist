@@ -1,0 +1,76 @@
+$light-grey: #f0f0f0
+$white: #FAFAFA
+$black: #232526
+$darker-grey: #7D7D7D
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+h3
+    font-size: 1.44rem
+
+h4
+    font-size: 0.833rem
+    text-transform: uppercase
+
+.leftmenu.active 
+    transform: translateX(-195px)
+
+.icon
+    height: auto
+    width: 27px
+
+.icon-small
+    height: auto
+    width: 20px
+
+
+.app 
+    display: flex
+    background-color: $white
+    color: $black
+    height: 100vh
+
+    .leftmenu
+        flex: 1 1 20%
+        background-color: $light-grey
+        padding: 20px
+        border-radius: 15px
+        transition: all .7s ease-in-out
+        .leftmenu-topbar
+            margin-bottom: 30px
+            .leftmenu--heading
+                display: flex
+                justify-content: space-between
+                img 
+                    color: $darker-grey
+                button
+                    border: none
+                    cursor: pointer
+
+        .tasks
+            h4
+                margin-bottom: 10px
+            .tasks--card
+                display: flex
+                align-items: center
+                padding-top: 7.5px
+                padding-bottom: 7.5px
+                color: $darker-grey
+                cursor: pointer
+                img
+                    margin-right: 12px     
+            .tasks--card:hover
+                img
+                    filter: hue-rotate(0)
+                p
+                    color: $black
+                    font-weight: 600
+        section
+            margin-bottom: 20px
+    
+    .today,.upcoming,.calendar,.sticky-notes
+        flex: 1 1 60%
+    .rightmenu 
+        flex: 1 1 20%
